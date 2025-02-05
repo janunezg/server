@@ -7,17 +7,8 @@ BASE_URL="http://localhost:1234/query"
 PATTERNS=(
 
 
-"MATCH (p32)=[ALL TRAILS ?p1 (:knows {1,5})/:studyAt]=>(?y) RETURN COUNT(?p1)"
-"MATCH (p32)=[ALL TRAILS ?p1 (:knows {1,5})/:workAt]=>(?y) RETURN COUNT(?p1)"
-"MATCH (m2597159)=[ALL TRAILS ?p1 (:replyOf {1,5})/:hasCreator]=>(?y) RETURN COUNT(?p1)"
-"MATCH (m2597159)=[ALL TRAILS ?p1 (:replyOf {1,5})/:hasTag]=>(?y) RETURN COUNT(?p1)"
-"MATCH (m2597159)=[ALL TRAILS ?p1 (:replyOf {1,5})/:replyOf]=>(?y) RETURN COUNT(?p1)"
+"MATCH (m2597159)=[ALL TRAILS ?p1 (:replyOf {0,5})/:hasTag]=>(?y) RETURN COUNT(?p1)"
 
-"MATCH (m2597159)=[ALL TRAILS ?p1 (:replyOf {0,5})/:hasCreator]=>(?y) RETURN COUNT(?p1)"
-"MATCH (tc7)=[ALL TRAILS ?p1 (:isSubclassOf {0,5})/:isSubclassOf]=>(?y) RETURN COUNT(?p1)"
-"MATCH (p32)=[ALL TRAILS ?p1 (:knows {0,5})/:isLocatedIn]=>(?y) RETURN COUNT(?p1)"
-"MATCH (p32)=[ALL TRAILS ?p1 (:knows {0,5})/:knows]=>(?y) RETURN COUNT(?p1)"
-"MATCH (p32)=[ALL TRAILS ?p1 (:knows {0,5})/:likes]=>(?y) RETURN COUNT(?p1)"
 
 
 "MATCH (m2597148)=[ALL TRAILS ?p1 (:hasCreator)/:knows{1,5}]=>(?y) RETURN COUNT(?p1)"
