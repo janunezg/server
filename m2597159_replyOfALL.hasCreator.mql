@@ -1,1 +1,1 @@
-MATCH (m2597159)=[ALL TRAILS ?p1 (:replyOf {0,5})/:hasCreator] RETURN COUNT(?p1)
+MATCH (m2597159)=[ALL TRAILS ?p1 (:replyOf {0,5})/:hasCreator]=>(?y) RETURN COUNT(?p1)
