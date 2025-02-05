@@ -1,0 +1,1 @@
+MATCH (p32)=[ALL TRAILS ?p1 (:knows {0,5})/:likes] RETURN COUNT(?p1)
